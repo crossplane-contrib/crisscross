@@ -1,0 +1,12 @@
+apiVersion: storage.gcp.crossplane.io/v1alpha3
+kind: Bucket
+metadata:
+  name: example
+  labels:
+    example: "true"
+spec:
+  location: US
+  storageClass: MULTI_REGIONAL
+  providerConfigRef:
+    name: example
+  deletionPolicy: Delete

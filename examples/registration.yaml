@@ -1,0 +1,9 @@
+apiVersion: crisscross.crossplane.io/v1alpha1
+kind: Registration
+metadata:
+  name: paaf
+spec:
+  typeRef:
+    apiVersion: storage.gcp.crossplane.io/v1alpha3
+    kind: Bucket
+  endpoint: http://172.18.0.2:32062

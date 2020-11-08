@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nop-paaf
+spec:
+  selector:
+    matchLabels:
+      run: nop-paaf
+  template:
+    metadata:
+      labels:
+        run: nop-paaf
+    spec:
+      containers:
+      - name: nop-paaf
+        image: hasheddan/nop-paaf:latest
+        ports:
+        - containerPort: 8081
