@@ -1,0 +1,10 @@
+apiVersion: pkg.crossplane.io/v1beta1
+kind: Provider
+metadata:
+  name: crisscross
+spec:
+  package: hasheddan/crisscross:latest
+  revisionActivationPolicy: Automatic
+  revisionHistoryLimit: 1
+  controllerConfigRef:
+    name: crisscross-config
