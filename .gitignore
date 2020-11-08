@@ -2,3 +2,5 @@
 /vendor
 /.vendor-new
 .vscode
+
+*.xpkg
